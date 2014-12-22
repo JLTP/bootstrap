@@ -78,10 +78,7 @@ angular.module('ui.bootstrap.modal', ['ui.bootstrap.transition'])
   .directive('modalWindow', ['$modalStack', '$timeout', function ($modalStack, $timeout) {
     return {
       restrict: 'EA',
-      scope: {
-        index: '@',
-        animate: '='
-      },
+      scope: true,
       replace: true,
       transclude: true,
       templateUrl: function(tElement, tAttrs) {
